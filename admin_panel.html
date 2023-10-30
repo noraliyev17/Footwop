@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon"href="images/logo.footwop.png"type="image/x-icon"/>
+  <link rel="stylesheet" href="./css/admin_panel.css ">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Admin Panel</title>
+
+</head>
+<body>
+  <div class="sections container">
+    <h1>Admin</h1>
+    <div class="section_1_2">
+      <div class="section_1">
+        <h1>Create Admin</h1>
+        <form action="#">
+          <p>Username</p>
+          <input id="create_username" type="text" placeholder="Enter your username">
+          <p>Role</p>
+          <input id="create_role" type="text" placeholder="Enter your role">
+          <p>Email</p>
+          <input id="create_email"  type="text" placeholder="Enter your email">
+          <p>Password</p>
+          <input id="create_password"  type="text" placeholder="Enter your password"> 
+          <button id="create_button" type="submit" class="button">Submit</button>
+        </form>
+      </div>
+
+
+      <div class="section_1">
+        <h1>Update Admin</h1>
+        <form action="#">
+          <p>Id</p>
+          <input id="update_id" type="number" placeholder="Enter your id">
+          <p>Username</p>
+          <input id="update_username" type="text" placeholder="Enter your username">
+          <p>Role</p>
+          <input id="update_role" type="text" placeholder="Enter your role">
+          <p>Email</p>
+          <input id="update_email" type="text" placeholder="Enter your email">
+          <p>Password</p>
+          <input id="update_password" type="text" placeholder="Enter your password"> 
+          <button id="update_button" type="submit" class="button">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="section_3_4">
+
+      <div class="section_1">
+        <h1>Delete Admin</h1>
+        <form action="#">
+          <p>Id</p>
+          <input id="delete_id" type="number" placeholder="Enter your id">
+          <p>Email</p>
+          <input id="delete_email" type="text" placeholder="Enter your email">
+          <p>Password</p>
+          <input id="delete_password" type="text" placeholder="Enter your password"> 
+          <button id="delete_button" type="submit" class="button">Submit</button>
+        </form>
+      </div>
+      
+    </div>
+    <div class="allusers">
+      <h1 class="alluad">All Users and Admins</h1>
+  
+      <table class="tr">
+        <tr>
+          <th>Id</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Username</th>
+          <th>Role</th>
+        </tr>
+      
+
+     
+      </table>
+
+      
+
+      
+    </div>
+  </div>
+
+
+
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./js/admin_panel.js"></script>
+<script src="js/utils.js"></script>
+</html>
